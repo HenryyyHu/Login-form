@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #333; /* Dark gray background */
+            color: white; /* White text */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            background-color: #444; /* Slightly lighter gray background */
+        }
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            background-color: #666; /* Gray input fields */
+            color: white; /* White text */
+            border: 1px solid #888;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #008CBA; /* Blue submit button */
+            color: white; /* White text */
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #005F7F; /* Darker blue on hover */
+        }
+        .lock-image {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="lock-image">
+        <img src="https://img.freepik.com/free-vector/padlock-coloured-outline_78370-548.jpg" alt="Lock Image" width="100">
+    </div>
+    <form action="/form_login" method="post">
+        <h2>Login</h2>
+        Username:<br>
+        <input type="text" name="username"><br>
+        Password:<br>
+        <input type="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+    <p>Don't have an account? <a href="/signup">Register</a></p>
+    <h1>{{info}}</h1>
+</div>
+
+</body>
+</html>
